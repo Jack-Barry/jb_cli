@@ -1,0 +1,36 @@
+{
+    "name": "@jack-barry/jb_cli",
+    "version": "1.0.0",
+    "type": "module",
+    "license": "MIT",
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "build": "tsc",
+        "coverage": "npm test -- --coverage",
+        "format": "prettier --write src",
+        "lint": "eslint",
+        "start": "npx tsx src/user_interface/cli/run.ts",
+        "start:js": "node dist/user_interface/cli/run.js",
+        "test": "CONSOLE_LOG_LEVEL=error vitest run",
+        "test:watch": "vitest"
+    },
+    "devDependencies": {
+        "@eslint/js": "9.19.0",
+        "@types/node": "22.12.0",
+        "@vitest/coverage-v8": "3.0.4",
+        "eslint": "9.19.0",
+        "eslint-config-prettier": "10.0.1",
+        "globals": "15.14.0",
+        "prettier": "3.4.2",
+        "tsx": "4.19.2",
+        "typescript": "5.7.3",
+        "typescript-eslint": "8.22.0",
+        "vitest": "3.0.4"
+    },
+    "dependencies": {
+        "pino": "9.6.0",
+        "pino-pretty": "13.0.0"
+    }
+}

@@ -1,0 +1,4 @@
+export enum EnvVar {
+    CONSOLE_LOG_LEVEL = 'CONSOLE_LOG_LEVEL',
+    FILE_LOG_LEVEL = 'FILE_LOG_LEVEL'
+}
